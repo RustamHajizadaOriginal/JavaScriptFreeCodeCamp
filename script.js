@@ -119,7 +119,16 @@
 // console.log("After: " + JSON.stringify(testArr));
 
 // ========= Boolean Values ===============
-
 // welcomeToBooleans = () => {
 //   return true;
 // };
+
+// ========= If Statements ===============
+const value = 5;
+ourTrueOrFalse = (value) => {
+  if (value) {
+    return "Yes, it's true";
+  }
+  return "No, it's false";
+};
+console.log(ourTrueOrFalse(0));
