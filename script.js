@@ -71,12 +71,24 @@
 // console.log(myOutfit());
 // console.log(outerWear);
 // ========= Retunr a value from a function ===============
-minusSeven = (num) => {
-  return num - 7;
-};
-console.log(minusSeven(10));
+// minusSeven = (num) => {
+//   return num - 7;
+// };
+// console.log(minusSeven(10));
 
-timesFive = (num) => {
-  return num * 5;
-};
-console.log(timesFive(10));
+// timesFive = (num) => {
+//   return num * 5;
+// };
+// console.log(timesFive(10));
+// ========= Undefined Value returned ===============
+// let sum = 0;
+// addThree = () => {
+//   sum = sum + 3;
+// };
+
+// console.log(addThree(10));
+
+// addFive = () => {
+//   sum += 5; // it is the same thing like this "sum = sum + 5;""
+// };
+// console.log(addFive(10));
