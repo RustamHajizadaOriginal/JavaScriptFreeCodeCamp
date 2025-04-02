@@ -232,10 +232,19 @@
 // console.log(testLessOrEqual(24));
 
 // ========= AND  Operators ===============
-testAndOperators = (val) => {
-  if (val <= 50 && val >= 25) {
-    return "Value between 50 and 25 both numbers are included.";
+// testAndOperators = (val) => {
+//   if (val <= 50 && val >= 25) {
+//     return "Value between 50 and 25 both numbers are included.";
+//   }
+//   return "Over 55 or Under 25";
+// };
+// console.log(testAndOperators(25));
+
+// ========= OR  Operators ===============
+testOrOperators = (val) => {
+  if (val < 10 || val > 20) {
+    return "outside";
   }
-  return "Over 55 or Under 25";
+  return "Inside";
 };
-console.log(testAndOperators(25));
+console.log(testOrOperators(12));
