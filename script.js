@@ -152,17 +152,33 @@
 // console.log(testSctrict(3));
 
 // =========  Inequality Operators ===============
+// testNotEqual = (val) => {
+//   if (val != 99) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// };
+// console.log(testNotEqual(99));
+// testNotEqual = (val) => {
+//   if (val != 99) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// };
+// console.log(testNotEqual("99"));
+
+// ========= Strick Inequality Operators ===============
 testNotEqual = (val) => {
-  if (val != 99) {
-    return "Not Equal";
-  }
-  return "Equal";
-};
-console.log(testNotEqual(99));
-testNotEqual = (val) => {
-  if (val != 99) {
+  if (val !== 99) {
     return "Not Equal";
   }
   return "Equal";
 };
 console.log(testNotEqual("99"));
+testNotEqual = (val) => {
+  if (val !== 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+};
+console.log(testNotEqual(99));
