@@ -220,13 +220,22 @@
 // console.log(testLessThan(55));
 
 // ========= Less than or Equal Operators ===============
-testLessOrEqual = (val) => {
-  if (val <= 25) {
-    return "Under or Equal to 25";
+// testLessOrEqual = (val) => {
+//   if (val <= 25) {
+//     return "Under or Equal to 25";
+//   }
+//   if (val <= 55) {
+//     return "Under or Equal to 55";
+//   }
+//   return "55 or Over";
+// };
+// console.log(testLessOrEqual(24));
+
+// ========= AND  Operators ===============
+testAndOperators = (val) => {
+  if (val <= 50 && val >= 25) {
+    return "Value between 50 and 25 both numbers are included.";
   }
-  if (val <= 55) {
-    return "Under or Equal to 55";
-  }
-  return "55 or Over";
+  return "Over 55 or Under 25";
 };
-console.log(testLessOrEqual(24));
+console.log(testAndOperators(25));
