@@ -142,11 +142,27 @@
 // console.log(testEqual(5));
 
 // ========= Strict Equality Operators ===============
-testSctrict = (val) => {
-  if (val === 3) {
-    return "Equal";
+// testSctrict = (val) => {
+//   if (val === 3) {
+//     return "Equal";
+//   }
+//   return "Not Equal";
+// };
+// console.log(testSctrict("3"));
+// console.log(testSctrict(3));
+
+// =========  Inequality Operators ===============
+testNotEqual = (val) => {
+  if (val != 99) {
+    return "Not Equal";
   }
-  return "Not Equal";
+  return "Equal";
 };
-console.log(testSctrict("3"));
-console.log(testSctrict(3));
+console.log(testNotEqual(99));
+testNotEqual = (val) => {
+  if (val != 99) {
+    return "Not Equal";
+  }
+  return "Equal";
+};
+console.log(testNotEqual("99"));
