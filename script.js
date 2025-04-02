@@ -250,13 +250,24 @@
 // console.log(testOrOperators(12));
 
 // ========= Else Statements ===============
-testElse = (val) => {
-  let result = "";
-  if (val > 5) {
-    result = "Bigger than 5";
-  } else {
-    result = "5 or Smaller";
+// testElse = (val) => {
+//   let result = "";
+//   if (val > 5) {
+//     result = "Bigger than 5";
+//   } else {
+//     result = "5 or Smaller";
+//   }
+//   return result;
+// };
+// console.log(testElse(6));
+
+// ========= Else IF Statements ===============
+testElseIf = (val) => {
+  if (val > 10) {
+    return "Greater than 10";
+  } else if (val < 5) {
+    return "Smaller than 5";
   }
-  return result;
+  return "Between 5 and 10";
 };
-console.log(testElse(6));
+console.log(testElseIf(4));
