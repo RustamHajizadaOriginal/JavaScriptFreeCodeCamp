@@ -241,10 +241,22 @@
 // console.log(testAndOperators(25));
 
 // ========= OR  Operators ===============
-testOrOperators = (val) => {
-  if (val < 10 || val > 20) {
-    return "outside";
+// testOrOperators = (val) => {
+//   if (val < 10 || val > 20) {
+//     return "outside";
+//   }
+//   return "Inside";
+// };
+// console.log(testOrOperators(12));
+
+// ========= Else Statements ===============
+testElse = (val) => {
+  let result = "";
+  if (val > 5) {
+    result = "Bigger than 5";
+  } else {
+    result = "5 or Smaller";
   }
-  return "Inside";
+  return result;
 };
-console.log(testOrOperators(12));
+console.log(testElse(6));
