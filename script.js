@@ -124,19 +124,29 @@
 // };
 
 // ========= If Statements ===============
-ourTrueOrFalse = (value) => {
-  if (value == 12) {
-    return "Yes, it's true";
-  }
-  return "No, it's false"; //show show this as 12 is not equal to 11
-};
-console.log(ourTrueOrFalse(11));
+// ourTrueOrFalse = (value) => {
+//   if (value == 12) {
+//     return "Yes, it's true";
+//   }
+//   return "No, it's false"; //show show this as 12 is not equal to 11
+// };
+// console.log(ourTrueOrFalse(11));
 
 // ========= Equality Operators ===============
-testEqual = (val) => {
-  if (val == 12) {
+// testEqual = (val) => {
+//   if (val == 12) {
+//     return "Equal";
+//   }
+//   return "not Equal";
+// };
+// console.log(testEqual(5));
+
+// ========= Strict Equality Operators ===============
+testSctrict = (val) => {
+  if (val === 3) {
     return "Equal";
   }
-  return "not Equal";
+  return "Not Equal";
 };
-console.log(testEqual(5));
+console.log(testSctrict("3"));
+console.log(testSctrict(3));
