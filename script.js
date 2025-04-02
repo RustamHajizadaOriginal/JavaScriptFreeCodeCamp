@@ -63,8 +63,11 @@
 // myLocalScope();
 // console.log(myVar); //Should get an error myVar is not defined as it's within the function
 // ========= Global VS Local Scope===============
-const outerWear = "T-shirt";
-myOutfit = () => {
-  const outerWear = "Sweater";
-  return outerWear;
-};
+// let outerWear = "T-shirt";
+// myOutfit = () => {
+//   let outerWear = "Sweater";
+//   return outerWear;
+// };
+// console.log(myOutfit());
+// console.log(outerWear);
+// ========= Retunr a value from a function ===============
