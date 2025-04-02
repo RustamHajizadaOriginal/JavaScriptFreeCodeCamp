@@ -184,13 +184,25 @@
 // console.log(testNotEqual(99));
 
 // ========= Greater than Operators ===============
-testGreaterThan = (val) => {
-  if (val > 99.999) {
-    return "Over 100";
+// testGreaterThan = (val) => {
+//   if (val > 99.999) {
+//     return "Over 100";
+//   }
+//   if (val > 9.999) {
+//     return "10 or Over";
+//   }
+//   return "Under 10";
+// };
+// console.log(testGreaterThan(10));
+
+// ========= Greater than or Equal Operators ===============
+testGreaterOrEqual = (val) => {
+  if (val >= 20) {
+    return "20 or Over";
   }
-  if (val > 9.999) {
+  if (val >= 10) {
     return "10 or Over";
   }
-  return "Under 10";
+  return "Less than 10";
 };
-console.log(testGreaterThan(10));
+console.log(testGreaterOrEqual(10));
