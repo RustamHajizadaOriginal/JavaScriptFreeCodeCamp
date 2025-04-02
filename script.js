@@ -71,3 +71,12 @@
 // console.log(myOutfit());
 // console.log(outerWear);
 // ========= Retunr a value from a function ===============
+minusSeven = (num) => {
+  return num - 7;
+};
+console.log(minusSeven(10));
+
+timesFive = (num) => {
+  return num * 5;
+};
+console.log(timesFive(10));
