@@ -92,3 +92,18 @@
 //   sum += 5; // it is the same thing like this "sum = sum + 5;""
 // };
 // console.log(addFive(10));
+
+// ========= Assignment with a Returned Value ===============
+// let changed = 0;
+// change = (num) => {
+//   return (num + 5) / 3;
+// };
+// changed = change(10);
+// console.log(changed);
+
+// let processed = 0;
+// processArg = (num) => {
+//   return (num + 3) / 5;
+// };
+// processed = processArg(7);
+// console.log(processed);
