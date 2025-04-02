@@ -168,17 +168,29 @@
 // console.log(testNotEqual("99"));
 
 // ========= Strick Inequality Operators ===============
-testNotEqual = (val) => {
-  if (val !== 99) {
-    return "Not Equal";
+// testNotEqual = (val) => {
+//   if (val !== 99) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// };
+// console.log(testNotEqual("99"));
+// testNotEqual = (val) => {
+//   if (val !== 99) {
+//     return "Not Equal";
+//   }
+//   return "Equal";
+// };
+// console.log(testNotEqual(99));
+
+// ========= Greater than Operators ===============
+testGreaterThan = (val) => {
+  if (val > 99.999) {
+    return "Over 100";
   }
-  return "Equal";
-};
-console.log(testNotEqual("99"));
-testNotEqual = (val) => {
-  if (val !== 99) {
-    return "Not Equal";
+  if (val > 9.999) {
+    return "10 or Over";
   }
-  return "Equal";
+  return "Under 10";
 };
-console.log(testNotEqual(99));
+console.log(testGreaterThan(10));
