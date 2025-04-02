@@ -124,11 +124,19 @@
 // };
 
 // ========= If Statements ===============
-const value = 5;
 ourTrueOrFalse = (value) => {
-  if (value) {
+  if (value == 12) {
     return "Yes, it's true";
   }
-  return "No, it's false";
+  return "No, it's false"; //show show this as 12 is not equal to 11
 };
-console.log(ourTrueOrFalse(0));
+console.log(ourTrueOrFalse(11));
+
+// ========= Equality Operators ===============
+testEqual = (val) => {
+  if (val == 12) {
+    return "Equal";
+  }
+  return "not Equal";
+};
+console.log(testEqual(5));
