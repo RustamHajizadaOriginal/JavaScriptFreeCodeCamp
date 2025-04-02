@@ -1,0 +1,23 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  margin: 2%;
+  padding: 2%;
+  border: 2%;
+  text-align: center;
+  color: darkblue;
+}
+
+p {
+  margin: 3%;
+  padding: 3%;
+  border: 2px dotted yellowgreen;
+  text-align: center;
+  color: #36bcbc;
+}
