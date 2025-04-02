@@ -62,3 +62,9 @@
 // };
 // myLocalScope();
 // console.log(myVar); //Should get an error myVar is not defined as it's within the function
+// ========= Global VS Local Scope===============
+const outerWear = "T-shirt";
+myOutfit = () => {
+  const outerWear = "Sweater";
+  return outerWear;
+};
