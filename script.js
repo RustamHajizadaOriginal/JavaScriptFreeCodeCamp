@@ -208,13 +208,25 @@
 // console.log(testGreaterOrEqual(10));
 
 // ========= Less than Operators ===============
-testLessThan = (val) => {
-  if (val < 24.999) {
-    return "Under 25";
+// testLessThan = (val) => {
+//   if (val < 24.999) {
+//     return "Under 25";
+//   }
+//   if (val < 54.999) {
+//     return "Under 55";
+//   }
+//   return "55 or Over";
+// };
+// console.log(testLessThan(55));
+
+// ========= Less than or Equal Operators ===============
+testLessOrEqual = (val) => {
+  if (val <= 25) {
+    return "Under or Equal to 25";
   }
-  if (val < 54.999) {
-    return "Under 55";
+  if (val <= 55) {
+    return "Under or Equal to 55";
   }
   return "55 or Over";
 };
-console.log(testLessThan(55));
+console.log(testLessOrEqual(24));
