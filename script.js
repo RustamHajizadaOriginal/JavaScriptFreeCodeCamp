@@ -419,11 +419,46 @@
 // console.log(isLess(20, 15));
 
 // ========= Returning Early Pattern from Functions  ===============
-abTest = (a, b) => {
-  if (a < 0 || b < 0) {
-    return "One or both numbers you have typed is(are) under the 0 or negative, please type the number 0 or above.";
-  }
+// abTest = (a, b) => {
+//   if (a < 0 || b < 0) {
+//     return "One or both numbers you have typed is(are) under the 0 or negative, please type the number 0 or above.";
+//   }
 
-  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+//   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+// };
+// console.log(abTest( 0, 16));
+
+// ========= Counting Cards  ===============
+let count = 0;
+
+cc = (card) => {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  let holdbet = "Hold";
+  if (count > 0) {
+    holdbet = "Bet";
+  }
+  return count + " " + holdbet;
 };
-console.log(abTest(-0.1, 16));
+
+cc(2);
+cc("K");
+cc(10);
+cc("K");
+cc("A");
+
+console.log(cc(4));
