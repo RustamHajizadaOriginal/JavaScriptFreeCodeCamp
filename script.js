@@ -430,7 +430,6 @@
 
 // ========= Counting Cards  ===============
 let count = 0;
-
 cc = (card) => {
   switch (card) {
     case 2:
@@ -454,11 +453,9 @@ cc = (card) => {
   }
   return count + " " + holdbet;
 };
-
 cc(2);
 cc("K");
 cc(10);
 cc("K");
 cc("A");
-
 console.log(cc(4));
