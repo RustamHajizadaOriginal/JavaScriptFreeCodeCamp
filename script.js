@@ -499,12 +499,23 @@
 // console.log(legsValue);
 
 // ========= Accessing Object Properties with Variables  ===============
+// const ourDog = {
+//   1: "Camper",
+//   2: 4,
+//   3: 1,
+//   4: ["everything!"],
+// };
+// const nameValue = 1;
+// const value = ourDog[nameValue];
+// console.log(value);
+
+// ========= Updating  Object Properties  ===============
 const ourDog = {
-  1: "Camper",
-  2: 4,
-  3: 1,
-  4: ["everything!"],
+  name: "Boby",
+  place: "New York",
+  age: 7,
+  friends: ["A lot!"],
 };
-const nameValue = 1;
-const value = ourDog[nameValue];
-console.log(value);
+ourDog.name = "Updated Body";
+const nameValue = ourDog.name;
+console.log(nameValue);
