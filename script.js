@@ -473,15 +473,27 @@
 //   tails: 2,
 //   friends: [],
 // };
-// ========= Accessing Object Properties with Dot notation  ===============
-const ourDog = {
-  name: "Camper",
-  legs: 4,
-  tails: 1,
-  friends: ["everything!"],
-};
-const nameValue = ourDog.name;
-const legsValue = ourDog.legs;
 
+// ========= Accessing Object Properties with Dot notation  ===============
+// const ourDog = {
+//   name: "Camper",
+//   legs: 4,
+//   tails: 1,
+//   friends: ["everything!"],
+// };
+// const nameValue = ourDog.name;
+// const legsValue = ourDog.legs;
+// console.log(nameValue);
+// console.log(legsValue);
+
+// ========= Accessing Object Properties with Bracket notation  ===============
+const myDog = {
+  name: "Boby",
+  legs: 3,
+  tails: 2,
+  friends: [],
+};
+const nameValue = myDog["name"];
+const legsValue = myDog["legs"];
 console.log(nameValue);
 console.log(legsValue);
