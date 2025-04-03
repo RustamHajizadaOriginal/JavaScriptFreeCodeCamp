@@ -318,23 +318,43 @@
 // console.log(goldScore(5, 9));
 
 // ========= Switch Statements  ===============
+// caseInSwitch = (val) => {
+//   let answer = "";
+//   switch (val) {
+//     case 1:
+//       answer = "Alpha";
+//       break;
+//     case 2:
+//       answer = "Beta";
+//       break;
+//     case 3:
+//       answer = "Gamma";
+//       break;
+//     case 4:
+//       answer = "Delta";
+//       break;
+//   }
+//   return answer;
+// };
+// console.log(caseInSwitch(1));
 
-caseInSwitch = (val) => {
+// ========= Default option in Switch Statements  ===============
+caseOfStuff = (val) => {
   let answer = "";
   switch (val) {
-    case 1:
-      answer = "Alpha";
+    case "a":
+      answer = "Apple";
       break;
-    case 2:
-      answer = "Beta";
+    case "b":
+      answer = "Bird";
       break;
-    case 3:
-      answer = "Gamma";
+    case "c":
+      answer = "Cat";
       break;
-    case 4:
-      answer = "Delta";
-      break;
+    default:
+      answer = "some Stafss which is not in switch statements";
   }
   return answer;
 };
-console.log(caseInSwitch(1));
+console.log(caseOfStuff("b"));
+console.log(caseOfStuff(99));
