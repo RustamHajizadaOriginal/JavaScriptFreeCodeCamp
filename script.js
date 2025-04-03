@@ -487,13 +487,24 @@
 // console.log(legsValue);
 
 // ========= Accessing Object Properties with Bracket notation  ===============
-const myDog = {
-  name: "Boby",
-  legs: 3,
-  tails: 2,
-  friends: [],
+// const myDog = {
+//   name: "Boby",
+//   legs: 3,
+//   tails: 2,
+//   friends: [],
+// };
+// const nameValue = myDog["name"];
+// const legsValue = myDog["legs"];
+// console.log(nameValue);
+// console.log(legsValue);
+
+// ========= Accessing Object Properties with Variables  ===============
+const ourDog = {
+  1: "Camper",
+  2: 4,
+  3: 1,
+  4: ["everything!"],
 };
-const nameValue = myDog["name"];
-const legsValue = myDog["legs"];
-console.log(nameValue);
-console.log(legsValue);
+const nameValue = 1;
+const value = ourDog[nameValue];
+console.log(value);
