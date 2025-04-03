@@ -339,22 +339,52 @@
 // console.log(caseInSwitch(1));
 
 // ========= Default option in Switch Statements  ===============
-caseOfStuff = (val) => {
+// caseOfStuff = (val) => {
+//   let answer = "";
+//   switch (val) {
+//     case "a":
+//       answer = "Apple";
+//       break;
+//     case "b":
+//       answer = "Bird";
+//       break;
+//     case "c":
+//       answer = "Cat";
+//       break;
+//     default:
+//       answer = "some Stafss which is not in switch statements";
+//   }
+//   return answer;
+// };
+// console.log(caseOfStuff("b"));
+// console.log(caseOfStuff(99));
+
+// ========= Multiple Identical  option in Switch Statements  ===============
+
+sequentialSizes = (value) => {
   let answer = "";
-  switch (val) {
-    case "a":
-      answer = "Apple";
+  switch (value) {
+    case 1:
+    case 2:
+    case 3:
+      answer = "LOW";
       break;
-    case "b":
-      answer = "Bird";
+    case 4:
+    case 5:
+    case 6:
+      answer = "MEDIUM";
       break;
-    case "c":
-      answer = "Cat";
+    case 7:
+    case 8:
+    case 9:
+      answer = "HIGH";
       break;
     default:
       answer = "some Stafss which is not in switch statements";
   }
   return answer;
 };
-console.log(caseOfStuff("b"));
-console.log(caseOfStuff(99));
+console.log(sequentialSizes(2));
+console.log(sequentialSizes(4));
+console.log(sequentialSizes(7));
+console.log(sequentialSizes("b"));
