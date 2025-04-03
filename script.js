@@ -413,7 +413,17 @@
 // console.log(chainToSwitch(7));
 
 // ========= Returning Boolean Values from Functions  ===============
-isLess = (a, b) => {
-  return a < b;
+// isLess = (a, b) => {
+//   return a < b;
+// };
+// console.log(isLess(20, 15));
+
+// ========= Returning Early Pattern from Functions  ===============
+abTest = (a, b) => {
+  if (a < 0 || b < 0) {
+    return "One or both numbers you have typed is(are) under the 0 or negative, please type the number 0 or above.";
+  }
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
 };
-console.log(isLess(20, 15));
+console.log(abTest(-0.1, 16));
