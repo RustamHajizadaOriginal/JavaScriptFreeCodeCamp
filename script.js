@@ -461,15 +461,27 @@
 // console.log(cc(4));
 
 // ========= Build JavaScript Objects  ===============
+// const ourDog = {
+//   name: "Camper",
+//   legs: 4,
+//   tails: 1,
+//   friends: ["everything!"],
+// };
+// const myDog = {
+//   name: "Quincy",
+//   legs: 3,
+//   tails: 2,
+//   friends: [],
+// };
+// ========= Accessing Object Properties with Dot notation  ===============
 const ourDog = {
   name: "Camper",
   legs: 4,
   tails: 1,
   friends: ["everything!"],
 };
-const myDog = {
-  name: "Quincy",
-  legs: 3,
-  tails: 2,
-  friends: [],
-};
+const nameValue = ourDog.name;
+const legsValue = ourDog.legs;
+
+console.log(nameValue);
+console.log(legsValue);
