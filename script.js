@@ -521,6 +521,18 @@
 // console.log(nameValue);
 
 // ========= ADD NEW Properties to an Object  ===============
+// const ourDog = {
+//   name: "Boby",
+//   place: "New York",
+//   age: 7,
+//   friends: ["A lot!"],
+// };
+// ourDog.owner = "Rustam";
+// const ownerValue = ourDog.owner;
+// console.log(ourDog);
+// console.log(ownerValue);
+
+// ========= ADD NEW Properties to an Object  ===============
 const ourDog = {
   name: "Boby",
   place: "New York",
@@ -528,6 +540,9 @@ const ourDog = {
   friends: ["A lot!"],
 };
 ourDog.owner = "Rustam";
+delete ourDog.age;
+const ageValue = ourDog.age;
 const ownerValue = ourDog.owner;
 console.log(ourDog);
 console.log(ownerValue);
+console.log(ageValue);
