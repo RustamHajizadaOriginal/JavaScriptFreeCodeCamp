@@ -429,33 +429,47 @@
 // console.log(abTest( 0, 16));
 
 // ========= Counting Cards  ===============
-let count = 0;
-cc = (card) => {
-  switch (card) {
-    case 2:
-    case 3:
-    case 4:
-    case 5:
-    case 6:
-      count++;
-      break;
-    case 10:
-    case "J":
-    case "Q":
-    case "K":
-    case "A":
-      count--;
-      break;
-  }
-  let holdbet = "Hold";
-  if (count > 0) {
-    holdbet = "Bet";
-  }
-  return count + " " + holdbet;
+// let count = 0;
+// cc = (card) => {
+//   switch (card) {
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//     case 6:
+//       count++;
+//       break;
+//     case 10:
+//     case "J":
+//     case "Q":
+//     case "K":
+//     case "A":
+//       count--;
+//       break;
+//   }
+//   let holdbet = "Hold";
+//   if (count > 0) {
+//     holdbet = "Bet";
+//   }
+//   return count + " " + holdbet;
+// };
+// cc(2);
+// cc("K");
+// cc(10);
+// cc("K");
+// cc("A");
+// console.log(cc(4));
+
+// ========= Build JavaScript Objects  ===============
+const ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
 };
-cc(2);
-cc("K");
-cc(10);
-cc("K");
-cc("A");
-console.log(cc(4));
+const myDog = {
+  name: "Quincy",
+  legs: 3,
+  tails: 2,
+  friends: [],
+};
