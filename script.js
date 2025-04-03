@@ -288,7 +288,7 @@
 // };
 // console.log(testSize(19));
 
-// ========= Gold Code ===============
+// ========= Else IF Statements Challenge ===============
 let names = [
   "Hole-in-one!",
   "Eagle",
