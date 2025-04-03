@@ -360,31 +360,54 @@
 // console.log(caseOfStuff(99));
 
 // ========= Multiple Identical  option in Switch Statements  ===============
+// sequentialSizes = (value) => {
+//   let answer = "";
+//   switch (value) {
+//     case 1:
+//     case 2:
+//     case 3:
+//       answer = "LOW";
+//       break;
+//     case 4:
+//     case 5:
+//     case 6:
+//       answer = "MEDIUM";
+//       break;
+//     case 7:
+//     case 8:
+//     case 9:
+//       answer = "HIGH";
+//       break;
+//     default:
+//       answer = "some Stafss which is not in switch statements";
+//   }
+//   return answer;
+// };
+// console.log(sequentialSizes(2));
+// console.log(sequentialSizes(4));
+// console.log(sequentialSizes(7));
+// console.log(sequentialSizes("b"));
 
-sequentialSizes = (value) => {
+// ========= Replacing If Else chains Statements with Switch  ===============
+chainToSwitch = (value) => {
   let answer = "";
   switch (value) {
-    case 1:
-    case 2:
-    case 3:
-      answer = "LOW";
+    case "Rustam":
+      answer = "KING";
       break;
-    case 4:
-    case 5:
-    case 6:
-      answer = "MEDIUM";
+    case 32:
+      answer = "Correct";
+      break;
+    case 1:
+      answer = "There is no #1";
+      break;
+    case 99:
+      answer = "Missed me buy this much!";
       break;
     case 7:
-    case 8:
-    case 9:
-      answer = "HIGH";
+      answer = "Ate Nine";
       break;
-    default:
-      answer = "some Stafss which is not in switch statements";
   }
   return answer;
 };
-console.log(sequentialSizes(2));
-console.log(sequentialSizes(4));
-console.log(sequentialSizes(7));
-console.log(sequentialSizes("b"));
+console.log(chainToSwitch(7));
