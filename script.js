@@ -389,25 +389,31 @@
 // console.log(sequentialSizes("b"));
 
 // ========= Replacing If Else chains Statements with Switch  ===============
-chainToSwitch = (value) => {
-  let answer = "";
-  switch (value) {
-    case "Rustam":
-      answer = "KING";
-      break;
-    case 32:
-      answer = "Correct";
-      break;
-    case 1:
-      answer = "There is no #1";
-      break;
-    case 99:
-      answer = "Missed me buy this much!";
-      break;
-    case 7:
-      answer = "Ate Nine";
-      break;
-  }
-  return answer;
+// chainToSwitch = (value) => {
+//   let answer = "";
+//   switch (value) {
+//     case "Rustam":
+//       answer = "KING";
+//       break;
+//     case 32:
+//       answer = "Correct";
+//       break;
+//     case 1:
+//       answer = "There is no #1";
+//       break;
+//     case 99:
+//       answer = "Missed me buy this much!";
+//       break;
+//     case 7:
+//       answer = "Ate Nine";
+//       break;
+//   }
+//   return answer;
+// };
+// console.log(chainToSwitch(7));
+
+// ========= Returning Boolean Values from Functions  ===============
+isLess = (a, b) => {
+  return a < b;
 };
-console.log(chainToSwitch(7));
+console.log(isLess(20, 15));
