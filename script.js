@@ -614,15 +614,51 @@
 // console.log(gloveBoxContents);
 
 // ========= Accessing Nested Objects  ===============
-const myPlants = [
-  {
-    type: "flowers",
-    list: ["Rose", "flower", "Tulip"],
+// const myPlants = [
+//   {
+//     type: "flowers",
+//     list: ["Rose", "flower", "Tulip"],
+//   },
+//   {
+//     type: "trees",
+//     list: ["fir", "pine", "birch"],
+//   },
+// ];
+// const secondTree = myPlants[1].list[1];
+// console.log(secondTree);
+
+// ========= Record Collection  ===============
+const collection = {
+  2548: {
+    album: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
   },
-  {
-    type: "trees",
-    list: ["fir", "pine", "birch"],
+  2468: {
+    album: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
   },
-];
-const secondTree = myPlants[1].list[1];
-console.log(secondTree);
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    album: "ABBA Gold",
+  },
+};
+
+const collectionCopy = JSON.parse(JSON.stringify(collection));
+updateRecors = (id, prop, value) => {
+  if (value === "") {
+    delete collectionCopy[id][prop];
+  } else if (prop === "tracks") {
+    collection[id][prop] = collection[id][prop] || [];
+    collection[id][prop].push(value);
+  } else {
+    collection[id][prop] = value;
+  }
+  return collection;
+};
+updateRecors(5439, "artist", "ABBA");
+console.log(updateRecors(1245, "tracks", "Once In Prague"));
