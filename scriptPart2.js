@@ -105,7 +105,6 @@ var contacts = [
     likes: ["JavaScript", "Gaming", "Foxes"],
   },
 ];
-
 function lookUpProfile(name, prop) {
   for (var i = 0; i < contacts.length; i++) {
     if (contacts[i].firstName === name) {
@@ -114,5 +113,6 @@ function lookUpProfile(name, prop) {
   }
   return "No such contact found in the list.";
 }
-var data = lookUpProfile("Sheock", "likes");
+var data = lookUpProfile("Harry", "lastName"); // Change this line
+var data = lookUpProfile("Akira", "likes"); // Change this line
 console.log(data);
