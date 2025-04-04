@@ -672,10 +672,23 @@
 // console.log(myArray);
 
 // ========= Iterate with For Loops  ===============
-const ourArray = [];
+// const ourArray = [];
+// for (let i = 0; i < 5; i++) {
+//   // Push the numbers 0 through 4 to myArray
+//   ourArray.push(i);
+// }
+// console.log(ourArray);
 
-for (let i = 0; i < 5; i++) {
-  // Push the numbers 0 through 4 to myArray
+// ========= Iterate Odd Numbers with a For Loops  ===============
+const ourArray = [];
+for (let i = 0; i < 25; i += 5) {
+  // Push the numbers 0 through 25 to myArray
   ourArray.push(i);
 }
 console.log(ourArray);
+const newArray = [];
+for (let i = 1; i < 10; i += 2) {
+  // FOR ODD NUMBER WE start i from 1 and add 2 to i in each iteration
+  newArray.push(i);
+}
+console.log(newArray);
