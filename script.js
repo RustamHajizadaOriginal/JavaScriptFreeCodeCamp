@@ -708,10 +708,27 @@
 // console.log(newArray);
 
 // ========= Iteratie through an Array with a For Loops  ===============
-let ourArray = [3, 5, 7, 15];
-let ourTotal = 0;
+// let ourArray = [3, 5, 7, 15];
+// let ourTotal = 0;
 
-for (let i = 0; i < ourArray.length; i++) {
-  ourTotal += ourArray[i];
-}
-console.log(ourTotal);
+// for (let i = 0; i < ourArray.length; i++) {
+//   ourTotal += ourArray[i];
+// }
+// console.log(ourTotal);
+
+// ========= Nesting For Loops  ===============
+multiplyAll = (arr) => {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    for (var j = 0; j < arr[i].length; j++) {
+      product *= arr[i][j];
+    }
+  }
+  return product;
+};
+let product = multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7],
+]);
+console.log(product); // should be 5040
