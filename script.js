@@ -419,14 +419,14 @@
 // console.log(isLess(20, 15));
 
 // ========= Returning Early Pattern from Functions  ===============
-// abTest = (a, b) => {
-//   if (a < 0 || b < 0) {
-//     return "One or both numbers you have typed is(are) under the 0 or negative, please type the number 0 or above.";
-//   }
+abTest = (a, b) => {
+  if (a < 0 || b < 0) {
+    return "One or both numbers you have typed is(are) under the 0 or negative, please type the number 0 or above.";
+  }
 
-//   return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
-// };
-// console.log(abTest( 0, 16));
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+};
+console.log(abTest(0, 16));
 
 // ========= Counting Cards  ===============
 // let count = 0;

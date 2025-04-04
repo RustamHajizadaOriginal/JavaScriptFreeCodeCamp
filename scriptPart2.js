@@ -79,40 +79,45 @@
 // console.log(i, myArray);
 
 // ========= Profile Lookup  ===============
-var contacts = [
-  {
-    firstName: "Akira",
-    lastName: "Laine",
-    number: "0543216543",
-    likes: ["Pizza", "Coding", "Brownie Points"],
-  },
-  {
-    firstName: "Harry",
-    lastName: "Potter",
-    number: "0991234567",
-    likes: ["Hogwarts", "Magic", "Hagrid"],
-  },
-  {
-    firstName: "Sherlock",
-    lastName: "Holmes",
-    number: "0487345643",
-    likes: ["Intriguing Cases", "Violin"],
-  },
-  {
-    firstName: "Kristian",
-    lastName: "Vang",
-    number: "unknown",
-    likes: ["JavaScript", "Gaming", "Foxes"],
-  },
-];
-function lookUpProfile(name, prop) {
-  for (var i = 0; i < contacts.length; i++) {
-    if (contacts[i].firstName === name) {
-      return contacts[i][prop] || "No such property";
-    }
-  }
-  return "No such contact found in the list.";
-}
-var data = lookUpProfile("Harry", "lastName"); // Change this line
-var data = lookUpProfile("Akira", "likes"); // Change this line
-console.log(data);
+// var contacts = [
+//   {
+//     firstName: "Akira",
+//     lastName: "Laine",
+//     number: "0543216543",
+//     likes: ["Pizza", "Coding", "Brownie Points"],
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     number: "0991234567",
+//     likes: ["Hogwarts", "Magic", "Hagrid"],
+//   },
+//   {
+//     firstName: "Sherlock",
+//     lastName: "Holmes",
+//     number: "0487345643",
+//     likes: ["Intriguing Cases", "Violin"],
+//   },
+//   {
+//     firstName: "Kristian",
+//     lastName: "Vang",
+//     number: "unknown",
+//     likes: ["JavaScript", "Gaming", "Foxes"],
+//   },
+// ];
+// function lookUpProfile(name, prop) {
+//   for (var i = 0; i < contacts.length; i++) {
+//     if (contacts[i].firstName === name) {
+//       return contacts[i][prop];
+//     } else {
+//       ("No such property");
+//     }
+//   }
+//   return "No such contact found in the list.";
+// }
+
+// var data = lookUpProfile("Harry", "lastName"); // Change this line
+// console.log(data); // Change this line
+const mySurname = "Rustam";
+
+console.log(mySurname);
