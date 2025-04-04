@@ -663,10 +663,19 @@
 // console.log(updateRecors(1245, "tracks", "Once In Prague"));
 
 // ========= Iterate with While Loops  ===============
-const myArray = [];
-let i = 0;
-while (i <= 5) {
-  myArray.push(i);
-  i++;
+// const myArray = [];
+// let i = 0;
+// while (i <= 5) {
+//   myArray.push(i);
+//   i++;
+// }
+// console.log(myArray);
+
+// ========= Iterate with For Loops  ===============
+const ourArray = [];
+
+for (let i = 0; i < 5; i++) {
+  // Push the numbers 0 through 4 to myArray
+  ourArray.push(i);
 }
-console.log(myArray);
+console.log(ourArray);
