@@ -565,18 +565,35 @@
 // console.log(phoeneticLookup("delta"));
 
 // ========= Testing Objects for Properties  ===============
-myObj = {
-  name: "Boby",
-  place: "New York",
-  age: 7,
-  friends: ["A lot!"],
-};
+// myObj = {
+//   name: "Boby",
+//   place: "New York",
+//   age: 7,
+//   friends: ["A lot!"],
+// };
 
-checkObj = (checkProperties) => {
-  if (myObj.hasOwnProperty(checkProperties)) {
-    return myObj[checkProperties];
-  } else {
-    return "No Property was Found";
-  }
-};
-console.log(checkObj("hello"));
+// checkObj = (checkProperties) => {
+//   if (myObj.hasOwnProperty(checkProperties)) {
+//     return myObj[checkProperties];
+//   } else {
+//     return "No Property was Found";
+//   }
+// };
+// console.log(checkObj("hello"));
+
+// ========= Manipulationg Complex Objects  ===============
+const myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+  {
+    artist: "Billy Joel",
+    title: "Cereal Man",
+    release_year: 2003,
+    formats: ["CD", "8T", "LP"],
+  },
+];
