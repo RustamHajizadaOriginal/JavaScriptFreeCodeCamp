@@ -548,18 +548,35 @@
 // console.log(ageValue);
 
 // ========= Using Objects for Lookups  ===============
-phoeneticLookup = (value) => {
-  let result = "";
+// phoeneticLookup = (value) => {
+//   let result = "";
 
-  let lookup = {
-    alpha: "Adams",
-    bravo: "Boston",
-    charlie: "Chicago",
-    delta: "Denver",
-    echo: "Easy",
-    foxtrot: "Frank",
-  };
-  result = lookup[value];
-  return result;
+//   let lookup = {
+//     alpha: "Adams",
+//     bravo: "Boston",
+//     charlie: "Chicago",
+//     delta: "Denver",
+//     echo: "Easy",
+//     foxtrot: "Frank",
+//   };
+//   result = lookup[value];
+//   return result;
+// };
+// console.log(phoeneticLookup("delta"));
+
+// ========= Testing Objects for Properties  ===============
+myObj = {
+  name: "Boby",
+  place: "New York",
+  age: 7,
+  friends: ["A lot!"],
 };
-console.log(phoeneticLookup("delta"));
+
+checkObj = (checkProperties) => {
+  if (myObj.hasOwnProperty(checkProperties)) {
+    return myObj[checkProperties];
+  } else {
+    return "No Property was Found";
+  }
+};
+console.log(checkObj("hello"));
