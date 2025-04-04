@@ -532,7 +532,7 @@
 // console.log(ourDog);
 // console.log(ownerValue);
 
-// ========= ADD NEW Properties to an Object  ===============
+// ========= DELETE Properties to an Object  ===============
 const ourDog = {
   name: "Boby",
   place: "New York",
