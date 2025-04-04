@@ -533,16 +533,33 @@
 // console.log(ownerValue);
 
 // ========= DELETE Properties to an Object  ===============
-const ourDog = {
-  name: "Boby",
-  place: "New York",
-  age: 7,
-  friends: ["A lot!"],
+// const ourDog = {
+//   name: "Boby",
+//   place: "New York",
+//   age: 7,
+//   friends: ["A lot!"],
+// };
+// ourDog.owner = "Rustam";
+// delete ourDog.age;
+// const ageValue = ourDog.age;
+// const ownerValue = ourDog.owner;
+// console.log(ourDog);
+// console.log(ownerValue);
+// console.log(ageValue);
+
+// ========= Using Objects for Lookups  ===============
+phoeneticLookup = (value) => {
+  let result = "";
+
+  let lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[value];
+  return result;
 };
-ourDog.owner = "Rustam";
-delete ourDog.age;
-const ageValue = ourDog.age;
-const ownerValue = ourDog.owner;
-console.log(ourDog);
-console.log(ownerValue);
-console.log(ageValue);
+console.log(phoeneticLookup("delta"));
