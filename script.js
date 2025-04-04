@@ -694,15 +694,24 @@
 // console.log(newArray);
 
 // ========= Count Backwards with a For Loops  ===============
-const ourArray = [];
-for (let i = 10; i > 0; i -= 2) {
-  // Push the numbers 10 through 0 to myArray
-  ourArray.push(i);
+// const ourArray = [];
+// for (let i = 10; i > 0; i -= 2) {
+//   // Push the numbers 10 through 0 to myArray
+//   ourArray.push(i);
+// }
+// console.log(ourArray);
+// const newArray = [];
+// for (let i = 9; i > 0; i -= 2) {
+//   // Push the numbers 9 through 1 to myArray
+//   newArray.push(i);
+// }
+// console.log(newArray);
+
+// ========= Iteratie through an Array with a For Loops  ===============
+let ourArray = [3, 5, 7, 15];
+let ourTotal = 0;
+
+for (let i = 0; i < ourArray.length; i++) {
+  ourTotal += ourArray[i];
 }
-console.log(ourArray);
-const newArray = [];
-for (let i = 9; i > 0; i -= 2) {
-  // Push the numbers 9 through 1 to myArray
-  newArray.push(i);
-}
-console.log(newArray);
+console.log(ourTotal);
