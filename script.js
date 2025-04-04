@@ -680,15 +680,29 @@
 // console.log(ourArray);
 
 // ========= Iterate Odd Numbers with a For Loops  ===============
+// const ourArray = [];
+// for (let i = 0; i < 25; i += 5) {
+//   // Push the numbers 0 through 25 to myArray
+//   ourArray.push(i);
+// }
+// console.log(ourArray);
+// const newArray = [];
+// for (let i = 1; i < 10; i += 2) {
+//   // FOR ODD NUMBER WE start i from 1 and add 2 to i in each iteration
+//   newArray.push(i);
+// }
+// console.log(newArray);
+
+// ========= Count Backwards with a For Loops  ===============
 const ourArray = [];
-for (let i = 0; i < 25; i += 5) {
-  // Push the numbers 0 through 25 to myArray
+for (let i = 10; i > 0; i -= 2) {
+  // Push the numbers 10 through 0 to myArray
   ourArray.push(i);
 }
 console.log(ourArray);
 const newArray = [];
-for (let i = 1; i < 10; i += 2) {
-  // FOR ODD NUMBER WE start i from 1 and add 2 to i in each iteration
+for (let i = 9; i > 0; i -= 2) {
+  // Push the numbers 9 through 1 to myArray
   newArray.push(i);
 }
 console.log(newArray);
