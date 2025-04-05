@@ -228,9 +228,26 @@
 //   };
 // })();
 // console.log(sum(1, 2, 3)); // 6
-const sum = (function () {
-  return function sum(...args) {
-    return args.reduce((a, b) => a + b, 0);
-  };
+// const sum = (function () {
+//   return function sum(...args) {
+//     return args.reduce((a, b) => a + b, 0);
+//   };
+// })();
+// console.log(sum(2, 3, 5, 1, 4, 7)); // 22
+
+// ========= Use the Spread Operator to Evaluate Arrays In-Place ===============
+
+// const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+// let arr2;
+// (function () {
+//   arr2 = arr1;
+//   arr1[0] = "potatos";
+// })();
+// console.log(arr2);
+const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+let arr2;
+(function () {
+  arr2 = [...arr1];
+  arr1[0] = "potatos";
 })();
-console.log(sum(2, 3, 5, 1, 4, 7)); // 22
+console.log(arr2);
