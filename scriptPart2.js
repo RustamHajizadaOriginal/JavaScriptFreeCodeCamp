@@ -138,10 +138,4 @@
 const ourRandomRange = (ourMin, ourMax) => {
   return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
 };
-ourRandomRange(1, 9); // Change this line
-
-const randomRamge = (myMin, MyMax) => {
-  return 0;
-};
-const myRandom = randomRamge(5, 15); // Change this line
-console.log(myRandom);
+console.log(ourRandomRange(1, 25));
