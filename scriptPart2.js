@@ -128,9 +128,20 @@
 // console.log(randomFraction());
 
 // ========= Random Whole Numbers  ===============
-const randomNumberBetween0and19 = Math.floor(Math.random() * 20);
-const randomWholeNum = () => {
-  return Math.floor(Math.random() * 10);
+// const randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+// const randomWholeNum = () => {
+//   return Math.floor(Math.random() * 10);
+// };
+// console.log(randomWholeNum());
+
+// ========= Generate Random Whole Numbers within a Range ===============
+const ourRandomRange = (ourMin, ourMax) => {
+  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
 };
-console.log(randomWholeNum());
-//
+ourRandomRange(1, 9); // Change this line
+
+const randomRamge = (myMin, MyMax) => {
+  return 0;
+};
+const myRandom = randomRamge(5, 15); // Change this line
+console.log(myRandom);
