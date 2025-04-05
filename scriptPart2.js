@@ -236,7 +236,6 @@
 // console.log(sum(2, 3, 5, 1, 4, 7)); // 22
 
 // ========= Use the Spread Operator to Evaluate Arrays In-Place ===============
-
 // const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
 // let arr2;
 // (function () {
@@ -244,10 +243,24 @@
 //   arr1[0] = "potatos";
 // })();
 // console.log(arr2);
-const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
-let arr2;
-(function () {
-  arr2 = [...arr1];
-  arr1[0] = "potatos";
-})();
-console.log(arr2);
+// const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+// let arr2;
+// (function () {
+//   arr2 = [...arr1];
+//   arr1[0] = "potatos";
+// })();
+// console.log(arr2);
+
+// ========= Destructuring Assignment ===============
+const voxel = { x: 3.6, y: 7.4, z: 6.54 };
+const { x: a, y: b, z: c } = voxel;
+const AVG_TEMPERATURES = {
+  today: 14.5,
+  tomorrow: 16,
+};
+const getTempOfTmrw = (avgTemperatures) => {
+  "use strict";
+  const { tomorrow: tempOfTomorrow } = avgTemperatures;
+  return tempOfTomorrow;
+};
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
