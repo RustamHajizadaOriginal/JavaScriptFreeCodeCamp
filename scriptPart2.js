@@ -121,8 +121,16 @@
 // const data = lookUpProfile("Akira", "lastName"); // Change this line
 // console.log(data); // Change this line
 
-// ========= Random Fractions and Whole Numbers  ===============
-const randomFraction = () => {
-  return Math.random();
+// ========= Random Fractions  Numbers  ===============
+// const randomFraction = () => {
+//   return Math.random();
+// };
+// console.log(randomFraction());
+
+// ========= Random Whole Numbers  ===============
+const randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+const randomWholeNum = () => {
+  return Math.floor(Math.random() * 10);
 };
-console.log(randomFraction());
+console.log(randomWholeNum());
+//
