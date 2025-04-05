@@ -147,7 +147,22 @@
 // console.log(convertToInteger("5")); // 56
 
 // ========= Use the parseInt Function with a Radix ===============
-const convertToInteger = (str) => {
-  return parseInt(str, 2); // 2 is the radix
+// const convertToInteger = (str) => {
+//   return parseInt(str, 2); // 2 is the radix
+// };
+// console.log(convertToInteger("0101"));
+
+// ========= Use the Conditional (Ternary) Operator ===============
+const checkEqual = (a, b) => {
+  if (a === b) {
+    return `${a} is Equal to ${b}`;
+  } else {
+    return `${a} is NOT Equal to ${b}`;
+  }
 };
-console.log(convertToInteger("0101"));
+console.log(checkEqual(5, 7.5));
+
+const checkEqual2 = (C, D) => {
+  return C === D ? true : false;
+};
+console.log(checkEqual2(5, 7));
