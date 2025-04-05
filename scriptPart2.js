@@ -141,7 +141,13 @@
 // console.log(ourRandomRange(1, 25));
 
 // ========= Use the parseInt Function ===============
+// const convertToInteger = (str) => {
+//   return parseInt(str);
+// };
+// console.log(convertToInteger("5")); // 56
+
+// ========= Use the parseInt Function with a Radix ===============
 const convertToInteger = (str) => {
-  return parseInt(str);
+  return parseInt(str, 2); // 2 is the radix
 };
-console.log(convertToInteger("5")); // 56
+console.log(convertToInteger("0101"));
