@@ -168,7 +168,14 @@
 // console.log(checkEqual2(5, 7));
 
 // ========= Use Multiple  Conditional (Ternary) Operator ===============
-const checkSign = (num) => {
-  return num > 0 ? "Above 0" : num < 0 ? "negative-Below 0" : "zero";
-};
-console.log(checkSign(-5));
+// const checkSign = (num) => {
+//   return num > 0 ? "Above 0" : num < 0 ? "negative-Below 0" : "zero";
+// };
+// console.log(checkSign(-5));
+
+// ========= Differences Between the var and let keywords ===============
+let catName = "Oliver";
+let quot;
+console.log(catName); // Oliver
+catName = "Benny";
+console.log(catName); // Benny
