@@ -108,20 +108,17 @@
 //     likes: ["JavaScript", "Gaming", "Foxes"],
 //   },
 // ];
-// function lookUpProfile(name, prop) {
-//   for (var i = 0; i < contacts.length; i++) {
+// const lookUpProfile = (name, prop) => {
+//   for (let i = 0; i < contacts.length; i++) {
 //     if (contacts[i].firstName === name) {
-//       return contacts[i][prop];
+//       return contacts[i][prop] || "No such property";
 //     } else {
 //       ("No such property");
 //     }
 //   }
 //   return "No such contact found in the list.";
-// }
-
-// var data = lookUpProfile("Harry", "lastName"); // Change this line
+// };
+// const data = lookUpProfile("Akira", "lastName"); // Change this line
 // console.log(data); // Change this line
-// const mySurname = "Rustam";
-// console.log(mySurname);
 
-//
+// ========= Profile Lookup  ===============
