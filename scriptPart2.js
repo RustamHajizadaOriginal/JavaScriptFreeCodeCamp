@@ -252,15 +252,30 @@
 // console.log(arr2);
 
 // ========= Destructuring Assignment ===============
-const voxel = { x: 3.6, y: 7.4, z: 6.54 };
-const { x: a, y: b, z: c } = voxel;
-const AVG_TEMPERATURES = {
-  today: 14.5,
-  tomorrow: 16,
+// const voxel = { x: 3.6, y: 7.4, z: 6.54 };
+// const { x: a, y: b, z: c } = voxel;
+// const AVG_TEMPERATURES = {
+//   today: 14.5,
+//   tomorrow: 16,
+// };
+// const getTempOfTmrw = (avgTemperatures) => {
+//   "use strict";
+//   const { tomorrow: tempOfTomorrow } = avgTemperatures;
+//   return tempOfTomorrow;
+// };
+// console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+// ========= Destructuring Assignment with Nested Objects ===============
+const LOCAL_FORECAST = {
+  today: { min: 4, max: 12 },
+  tomorrow: { min: 4, max: 12 },
 };
-const getTempOfTmrw = (avgTemperatures) => {
+const getMaxOfTmrw = (forecast) => {
   "use strict";
-  const { tomorrow: tempOfTomorrow } = avgTemperatures;
-  return tempOfTomorrow;
+  const {
+    tomorrow: { max: maxOfTomorrow },
+  } = forecast;
+  return maxOfTomorrow;
 };
-console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+console.log(getMaxOfTmrw(LOCAL_FORECAST));
