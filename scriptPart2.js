@@ -153,16 +153,22 @@
 // console.log(convertToInteger("0101"));
 
 // ========= Use the Conditional (Ternary) Operator ===============
-const checkEqual = (a, b) => {
-  if (a === b) {
-    return `${a} is Equal to ${b}`;
-  } else {
-    return `${a} is NOT Equal to ${b}`;
-  }
-};
-console.log(checkEqual(5, 7.5));
+// const checkEqual = (a, b) => {
+//   if (a === b) {
+//     return `${a} is Equal to ${b}`;
+//   } else {
+//     return `${a} is NOT Equal to ${b}`;
+//   }
+// };
+// console.log(checkEqual(5, 7.5));
 
-const checkEqual2 = (C, D) => {
-  return C === D ? true : false;
+// const checkEqual2 = (C, D) => {
+//   return C === D ? true : false;
+// };
+// console.log(checkEqual2(5, 7));
+
+// ========= Use Multiple  Conditional (Ternary) Operator ===============
+const checkSign = (num) => {
+  return num > 0 ? "Above 0" : num < 0 ? "negative-Below 0" : "zero";
 };
-console.log(checkEqual2(5, 7));
+console.log(checkSign(-5));
