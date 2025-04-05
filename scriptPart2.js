@@ -221,10 +221,16 @@
 // console.log(increment(5)); // 6
 
 // ========= Use the Rest Operator with Function Parameters ===============
+// const sum = (function () {
+//   return function sum(x, y, z) {
+//     const args = [x, y, z];
+//     return args.reduce((a, b) => a + b, 0);
+//   };
+// })();
+// console.log(sum(1, 2, 3)); // 6
 const sum = (function () {
-  return function sum(x, y, z) {
-    const args = [x, y, z];
+  return function sum(...args) {
     return args.reduce((a, b) => a + b, 0);
   };
 })();
-console.log(sum(1, 2, 3)); // 6
+console.log(sum(2, 3, 5, 1, 4, 7)); // 22
