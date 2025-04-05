@@ -1,3 +1,6 @@
+// Learn JavaScript - Full Course for Beginners - freeCodeCamp.org
+// https://www.youtube.com/watch?v=PkZNo7MFNFg
+
 // ========= Iterate with While Loops  ===============
 // const myArray = [];
 // let i = 0;
@@ -118,6 +121,7 @@
 
 // var data = lookUpProfile("Harry", "lastName"); // Change this line
 // console.log(data); // Change this line
-const mySurname = "Rustam";
+// const mySurname = "Rustam";
+// console.log(mySurname);
 
-console.log(mySurname);
+//
