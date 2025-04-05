@@ -135,7 +135,13 @@
 // console.log(randomWholeNum());
 
 // ========= Generate Random Whole Numbers within a Range ===============
-const ourRandomRange = (ourMin, ourMax) => {
-  return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+// const ourRandomRange = (ourMin, ourMax) => {
+//   return Math.floor(Math.random() * (ourMax - ourMin + 1)) + ourMin;
+// };
+// console.log(ourRandomRange(1, 25));
+
+// ========= Use the parseInt Function ===============
+const convertToInteger = (str) => {
+  return parseInt(str);
 };
-console.log(ourRandomRange(1, 25));
+console.log(convertToInteger("5")); // 56
