@@ -198,6 +198,24 @@
 // console.log(PI);
 
 // ========= Arroy function ===============
-const myArroyFunction = () => "Hello World!";
+// const myArroyFunction = () => "Hello World!";
+// console.log(myArroyFunction);
 
-console.log(myArroyFunction);
+// ========= Write Higher Order Arrow Function ===============
+// const realNumberArrey = [4, 5.6, 42, -3.14, 6, 2.5, , 0.12, -1.8];
+// const squareList = (arr) => {
+//   const squaredIntegers = arr
+//     .filter((num) => Number.isInteger(num) && num > 0)
+//     .map((x) => x * x);
+//   return squaredIntegers;
+// };
+// const squaredIntegers = squareList(realNumberArrey);
+// console.log(squaredIntegers); // [16, 9]
+
+// const increment = (function () {
+//   return function increment(number, value = 1) {
+//     return number + value;
+//   };
+// })();
+// console.log(increment(5, 2)); // 7
+// console.log(increment(5)); // 6
