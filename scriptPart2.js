@@ -181,18 +181,23 @@
 // console.log(catName); // Benny
 
 // ========= Prevent Object Mutation ===============
-const freezeObj = () => {
-  "use strict";
-  const MATH_CONSTANTS = {
-    PI: 3.14,
-  };
-  Object.freeze(MATH_CONSTANTS); // This will freeze the object and prevent any changes to it
-  try {
-    MATH_CONSTANTS.PI = 77; // This will throw an error
-  } catch (ex) {
-    console.log(ex); // TypeError: Cannot assign to read only property 'PI' of object '#<Object>'
-  }
-  return MATH_CONSTANTS.PI; // 3.14
-};
-const PI = freezeObj(); // Change this line
-console.log(PI);
+// const freezeObj = () => {
+//   "use strict";
+//   const MATH_CONSTANTS = {
+//     PI: 3.14,
+//   };
+//   Object.freeze(MATH_CONSTANTS); // This will freeze the object and prevent any changes to it
+//   try {
+//     MATH_CONSTANTS.PI = 77; // This will throw an error
+//   } catch (ex) {
+//     console.log(ex); // TypeError: Cannot assign to read only property 'PI' of object '#<Object>'
+//   }
+//   return MATH_CONSTANTS.PI; // 3.14
+// };
+// const PI = freezeObj(); // Change this line
+// console.log(PI);
+
+// ========= Arroy function ===============
+const myArroyFunction = () => "Hello World!";
+
+console.log(myArroyFunction);
