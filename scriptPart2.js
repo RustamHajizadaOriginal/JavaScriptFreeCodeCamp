@@ -402,5 +402,5 @@
 // }
 
 // ========= Import a Default Export ===============
-import subtract from "./stingFunction.js";
-subtract(7, 4);
+// import subtract from "./stingFunction.js";
+// subtract(7, 4);
