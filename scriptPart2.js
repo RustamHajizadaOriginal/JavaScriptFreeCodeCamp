@@ -251,7 +251,7 @@
 // })();
 // console.log(arr2);
 
-// ========= Destructuring Assignment ===============
+// ========= Use Destructuring Assignment ===============
 // const voxel = { x: 3.6, y: 7.4, z: 6.54 };
 // const { x: a, y: b, z: c } = voxel;
 // const AVG_TEMPERATURES = {
@@ -265,7 +265,7 @@
 // };
 // console.log(getTempOfTmrw(AVG_TEMPERATURES));
 
-// ========= Destructuring Assignment with Nested Objects ===============
+// ========= Use Destructuring Assignment with Nested Objects ===============
 // const LOCAL_FORECAST = {
 //   today: { min: 4, max: 12 },
 //   tomorrow: { min: 4, max: 12 },
@@ -279,13 +279,29 @@
 // };
 // console.log(getMaxOfTmrw(LOCAL_FORECAST));
 
-// ========= Destructuring Assignment with the Rest Operator ===============
+// ========= Use Destructuring Assignment with the Rest Operator ===============
+// const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const removeFirstTwo = (list) => {
+//   const [, , ...arr] = list;
+//   return arr;
+// };
+// const arr = removeFirstTwo(source);
+// console.log(source); // Will show the original array
+// console.log(arr);
 
-const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const removeFirstTwo = (list) => {
-  const [, , ...arr] = list;
-  return arr;
+// ========= Use Destructuring Assignment to Pass an Object as a Function's Pramaeters ===============
+const stats = {
+  max: 56.78,
+  standard_deviation: 4.34,
+  median: 34.54,
+  mode: 23.87,
+  min: -0.75,
+  average: 35.85,
 };
-const arr = removeFirstTwo(source);
-console.log(source); // Will show the original array
-console.log(arr);
+const half = (function () {
+  return function half({ max, min }) {
+    return (max + min) / 2.0;
+  };
+})();
+console.log(stats);
+console.log(half(stats));
