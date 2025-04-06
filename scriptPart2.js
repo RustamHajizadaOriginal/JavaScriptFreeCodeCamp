@@ -1,5 +1,6 @@
 // Learn JavaScript - Full Course for Beginners - freeCodeCamp.org
 // https://www.youtube.com/watch?v=PkZNo7MFNFg   repeat : 02:45:00-03:20:17
+import { capitalizeString } from "./stingFunction.js";
 
 // ========= Iterate with While Loops  ===============
 // const myArray = [];
@@ -360,23 +361,28 @@
 // console.log(zeus.targetPlanet);
 
 // ========= Use Getters and Setters to Control Access to an Object ===============
-const makeClass = () => {
-  class Thermostat {
-    constructor(temp) {
-      this._temp = (5 / 9) * (temp - 32);
-    }
-    get temperature() {
-      return this._temp;
-    }
-    set temperature(updatedTemp) {
-      this._temp = updatedTemp;
-    }
-  }
-  return Thermostat;
-};
-const Thermostat = makeClass();
-const thermos = new Thermostat(71);
-let temp = thermos.temperature;
-thermos.temperature = 21;
-temp = thermos.temperature;
-console.log(temp);
+// const makeClass = () => {
+//   class Thermostat {
+//     constructor(temp) {
+//       this._temp = (5 / 9) * (temp - 32);
+//     }
+//     get temperature() {
+//       return this._temp;
+//     }
+//     set temperature(updatedTemp) {
+//       this._temp = updatedTemp;
+//     }
+//   }
+//   return Thermostat;
+// };
+// const Thermostat = makeClass();
+// const thermos = new Thermostat(71);
+// let temp = thermos.temperature;
+// thermos.temperature = 21;
+// temp = thermos.temperature;
+// console.log(temp);
+
+// ========= Understand the Differences Betweeen Import and Require===============
+
+const cap = capitalizeString("Hello!");
+console.log(cap);
