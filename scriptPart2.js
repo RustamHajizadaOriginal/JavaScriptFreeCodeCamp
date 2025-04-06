@@ -1,6 +1,5 @@
 // Learn JavaScript - Full Course for Beginners - freeCodeCamp.org
 // https://www.youtube.com/watch?v=PkZNo7MFNFg   repeat : 02:45:00-03:20:17
-import { capitalizeString } from "./stingFunction.js";
 
 // ========= Iterate with While Loops  ===============
 // const myArray = [];
@@ -385,11 +384,14 @@ import { capitalizeString } from "./stingFunction.js";
 // ========= Understand the Differences Betweeen Import and Require===============
 // const cap = capitalizeString("Hello!");
 // console.log(cap);
-
+// import { capitalizeString } from "./stingFunction.js";
 // ========= Use export to Reuse a Code Block ===============
-const capitalizeString = (string) => {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-};
-export const foo = "bar";
-export const bar = "foo";
-export { capitalizeString };
+// const capitalizeString = (string) => {
+//   return string.charAt(0).toUpperCase() + string.slice(1);
+// };
+// export const foo = "bar";
+// export const bar = "foo";
+// export { capitalizeString };
+
+// ========= Use * to Import Everything from a File ===============
+import * as capitalizeString from "./stingFunction.js";
