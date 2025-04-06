@@ -343,3 +343,18 @@
 // //------------
 // const easyCreatePerson = (name, age, gender) => ({ name, age, gender });
 // console.log(easyCreatePerson("Dominika Hajizada", 28, "Female"));
+
+// ========= Use class Syntax to Define a Constructor Function ===============
+// var SpaceShuttle = function (targetPlanet) {
+//   this.targetPlanet = targetPlanet;
+// };
+// var zeus = new SpaceShuttle("Jupiter");
+// console.log(zeus.targetPlanet);
+//By using Class syntax:
+class SpaceShuttle {
+  constructor(targetPlanet) {
+    this.targetPlanet = targetPlanet;
+  }
+}
+var zeus = new SpaceShuttle("Jupiter");
+console.log(zeus.targetPlanet);
