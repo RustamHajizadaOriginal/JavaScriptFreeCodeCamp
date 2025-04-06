@@ -290,18 +290,43 @@
 // console.log(arr);
 
 // ========= Use Destructuring Assignment to Pass an Object as a Function's Pramaeters ===============
-const stats = {
-  max: 56.78,
-  standard_deviation: 4.34,
-  median: 34.54,
-  mode: 23.87,
-  min: -0.75,
-  average: 35.85,
+// const stats = {
+//   max: 56.78,
+//   standard_deviation: 4.34,
+//   median: 34.54,
+//   mode: 23.87,
+//   min: -0.75,
+//   average: 35.85,
+// };
+// const half = (function () {
+//   return function half({ max, min }) {
+//     return (max + min) / 2.0;
+//   };
+// })();
+// console.log(stats);
+// console.log(half(stats));
+
+// ========= Create Strings using Template Literals ===============
+// const person = {
+//   name: "Rustam",
+//   age: 32,
+// };
+// // template literal with multt-line and string interpolation
+// const greeting = `Hello, my name is ${person.name}!
+// I am ${person.age} years old.`;
+// console.log(greeting);
+// Challenge.
+const result = {
+  success: ["max-A", "max2-A", "max3-A"],
+  failure: ["max-F", "max2-F", "max3-F"],
+  skipped: ["max-D", "max2-D", "max3-D"],
 };
-const half = (function () {
-  return function half({ max, min }) {
-    return (max + min) / 2.0;
-  };
-})();
-console.log(stats);
-console.log(half(stats));
+const makeList = (arr) => {
+  const resultDisplayArrey = [];
+  for (let i = 0; i < arr.length; i++) {
+    resultDisplayArrey.push(`<li class='text-warming'>${arr[i]}</li>`);
+  }
+  return resultDisplayArrey;
+};
+const resultDisplayArrey = makeList(result.failure);
+console.log(resultDisplayArrey);
