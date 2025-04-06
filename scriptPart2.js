@@ -383,6 +383,13 @@ import { capitalizeString } from "./stingFunction.js";
 // console.log(temp);
 
 // ========= Understand the Differences Betweeen Import and Require===============
+// const cap = capitalizeString("Hello!");
+// console.log(cap);
 
-const cap = capitalizeString("Hello!");
-console.log(cap);
+// ========= Use export to Reuse a Code Block ===============
+const capitalizeString = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+export const foo = "bar";
+export const bar = "foo";
+export { capitalizeString };
