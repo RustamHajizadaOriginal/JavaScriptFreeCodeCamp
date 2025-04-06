@@ -394,4 +394,9 @@
 // export { capitalizeString };
 
 // ========= Use * to Import Everything from a File ===============
-import * as capitalizeString from "./stingFunction.js";
+// import * as capitalizeString from "./stingFunction.js";
+
+// ========= Create an Export Fallback with export default ===============
+export default function subtract(x, y) {
+  return x - y;
+}
