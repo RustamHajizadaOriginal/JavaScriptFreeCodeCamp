@@ -315,18 +315,31 @@
 // const greeting = `Hello, my name is ${person.name}!
 // I am ${person.age} years old.`;
 // console.log(greeting);
-// Challenge.
-const result = {
-  success: ["max-A", "max2-A", "max3-A"],
-  failure: ["max-F", "max2-F", "max3-F"],
-  skipped: ["max-D", "max2-D", "max3-D"],
+// --------Challenge.
+// const result = {
+//   success: ["max-A", "max2-A", "max3-A"],
+//   failure: ["max-F", "max2-F", "max3-F"],
+//   skipped: ["max-D", "max2-D", "max3-D"],
+// };
+// const makeList = (arr) => {
+//   const resultDisplayArrey = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     resultDisplayArrey.push(`<li class='text-warming'>${arr[i]}</li>`);
+//   }
+//   return resultDisplayArrey;
+// };
+// const resultDisplayArrey = makeList(result.failure);
+// console.log(resultDisplayArrey);
+
+// ========= Write Concise Object Literal Declarations Using Simple Fields ===============
+const createPerson = (name, age, gender) => {
+  return {
+    name: name,
+    age: age,
+    gender: gender,
+  };
 };
-const makeList = (arr) => {
-  const resultDisplayArrey = [];
-  for (let i = 0; i < arr.length; i++) {
-    resultDisplayArrey.push(`<li class='text-warming'>${arr[i]}</li>`);
-  }
-  return resultDisplayArrey;
-};
-const resultDisplayArrey = makeList(result.failure);
-console.log(resultDisplayArrey);
+console.log(createPerson("Rustam Hajizada", 32, "Male"));
+//------------
+const easyCreatePerson = (name, age, gender) => ({ name, age, gender });
+console.log(easyCreatePerson("Dominika Hajizada", 28, "Female"));
