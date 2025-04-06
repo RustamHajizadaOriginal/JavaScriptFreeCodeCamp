@@ -397,6 +397,10 @@
 // import * as capitalizeString from "./stingFunction.js";
 
 // ========= Create an Export Fallback with export default ===============
-export default function subtract(x, y) {
-  return x - y;
-}
+// export default function subtract(x, y) {
+//   return x - y;
+// }
+
+// ========= Import a Default Export ===============
+import subtract from "./stingFunction.js";
+subtract(7, 4);
