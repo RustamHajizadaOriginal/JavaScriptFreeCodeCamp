@@ -360,7 +360,7 @@
 // console.log(zeus.targetPlanet);
 
 // ========= Use Getters and Setters to Control Access to an Object ===============
-function makeClass() {
+const makeClass = () => {
   class Thermostat {
     constructor(temp) {
       this._temp = (5 / 9) * (temp - 32);
@@ -373,7 +373,7 @@ function makeClass() {
     }
   }
   return Thermostat;
-}
+};
 const Thermostat = makeClass();
 const thermos = new Thermostat(71);
 let temp = thermos.temperature;
