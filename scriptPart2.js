@@ -332,14 +332,14 @@
 // console.log(resultDisplayArrey);
 
 // ========= Write Concise Object Literal Declarations Using Simple Fields ===============
-const createPerson = (name, age, gender) => {
-  return {
-    name: name,
-    age: age,
-    gender: gender,
-  };
-};
-console.log(createPerson("Rustam Hajizada", 32, "Male"));
-//------------
-const easyCreatePerson = (name, age, gender) => ({ name, age, gender });
-console.log(easyCreatePerson("Dominika Hajizada", 28, "Female"));
+// const createPerson = (name, age, gender) => {
+//   return {
+//     name: name,
+//     age: age,
+//     gender: gender,
+//   };
+// };
+// console.log(createPerson("Rustam Hajizada", 32, "Male"));
+// //------------
+// const easyCreatePerson = (name, age, gender) => ({ name, age, gender });
+// console.log(easyCreatePerson("Dominika Hajizada", 28, "Female"));
